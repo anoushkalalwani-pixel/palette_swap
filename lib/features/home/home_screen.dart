@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../core/router/app_router.dart';
 import '../../core/utils/constants.dart';
 
 /// The landing screen of the application.
 ///
-/// This is a baseline placeholder introduced with the initial project
-/// structure; the upload flow will be wired in by a later task.
+/// Entry point of the core flow: from here the user starts an analysis, which
+/// takes them to the upload screen.
 class HomeScreen extends StatelessWidget {
   /// Creates the home screen.
   const HomeScreen({super.key});
@@ -34,6 +36,11 @@ class HomeScreen extends StatelessWidget {
                   color: theme.colorScheme.onSurfaceVariant,
                 ),
                 textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: AppSpacing.xl),
+              FilledButton(
+                onPressed: () => context.pushNamed(AppRouter.uploadName),
+                child: const Text('Get Started'),
               ),
             ],
           ),
