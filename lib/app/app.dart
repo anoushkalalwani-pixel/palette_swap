@@ -16,7 +16,9 @@ class PaletteSwapApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Palette Swap',
       theme: AppTheme.light,
-      darkTheme: AppTheme.dark,
+      // Dark theme is not enabled yet; [AppTheme] is structured so it can be
+      // added by supplying a dark [ColorScheme] to its builder.
+      themeMode: ThemeMode.light,
       routerConfig: AppRouter.router,
     );
   }
