@@ -1,17 +1,42 @@
-# palette_swap
+# PaletteSwap
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+PaletteSwap is an AI assistant for traditional oil painters.
 
-This project is a starting point for a Flutter application.
+Users upload a reference image.
 
-A few resources to get you started if this is your first Flutter project:
+Claude analyzes the image and returns:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Recommended underpainting (Black or Burnt Umber)
+- Recommended Winsor & Newton oil paint palette
+- Suggested paint mixing ratios
+- Step-by-step painting plan
+- Estimated painting difficulty
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## MVP
+
+The application should contain:
+
+- Home screen
+- Upload image screen
+- Loading screen
+- Results screen
+
+Results include:
+
+- Underpainting recommendation
+- Color palette
+- Mixing recipes
+- Painting steps
+- Difficulty rating
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Claude Vision API
+
+## Goal
+
+A polished demo application that showcases AI-assisted traditional painting.
